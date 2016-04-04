@@ -1,0 +1,30 @@
+# CC2650 Datasheet
+  Microcontroller
+    - ARM Cortex -M3 (32bit CPU)
+    - 128KB of In-System Programmable Flash
+    - 8KB of SRAM for Cache
+    - 20KB of Ultralow-Leakage SRAM
+    - Supports OTA ( Over-The-Air) Upgrade
+    
+  Peripherals
+    - 12-Bit ADC
+    - UART
+    - 2x SSI(SPI, MICROWIRE, TI)
+    - I2C
+    - I2S
+    - Real-Time Clock
+    - 10, 15, 31 GPIOs
+    
+  Power Management
+  MODE                  Software configureable Power Modes            Reset pin held
+                        Active     IDLE       STANDBY      SHUTDOWN
+                  
+  CPU                   Active     Off        Off          Off
+  Flash                 On         Available  Off          Off
+  SRAM                  On         On         On           Off
+  Radio                 Available  Available  Off          Off
+  Supply System         On         On         Duty Cycled  Off
+  Wake up on RTC        Available  Available  Available    Off
+  Wake up on Pin Edge   Available  Available  Available    Available
+  Wake up on Reset Pin  Available  Available  Available    Available
+  
